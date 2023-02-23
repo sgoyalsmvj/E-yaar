@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Joshi.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="fbg">
+        <div class="form">
+            <h2 id="login-header">Login</h2>
+            <form action="/signin" method="POST" novalidate class="validated-form  addbgadmin">
+    
+                <div class="mb-3">
+                    <label class="form-label" for="image">Number:</label>
+                    <input class="form-control" type="text" id="image1" name="user[number]" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label class="form-label" for="image">Password:</label>
+                    <input class="form-control" type="password" id="image3" name="user[pass]" required>
+    
+                </div>
+                <br>
+                
+                <div class="mb-3 lbtn">
+                    <button id="login-btn" class="btn btn-success">Login</button>
+                </div>
+            </form>
+            
+
+    
+        </div>
+    </div>
+    <a class="signref" href="/signup">SIGNUP</a>
+
+</body>
+
+</html>

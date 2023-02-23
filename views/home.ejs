@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Joshi.css">
+</head>
+
+<body>
+    <!-- // add header here. -->
+
+    <header onscroll="f1()">
+        <div class="con">
+            <ul class="topl">
+                <li id="clan"><a href="/analyze">Analyzie</a></li>
+                <li id="clpl"><a href="/amazon">Platforms</a></li>
+                <li id="clpr"><a href="/products">Products</a></li>
+                <li id="clpr"><a href="/orders">Orders</a></li>
+            </ul>
+            <ul class="topr">
+                <%if(status==0){%>
+                    <a href="/signin">Login</a>
+                    <%}else{%>
+                        <h3><%=t.name%></h3>
+                        
+                    <%}%>
+    
+            </ul>
+    
+        </div>
+        <div class="bghold">
+            <img src="finalbg.jpg" alt="">
+        </div>
+        <div class="midtext">
+            <section>
+                <h1>E-</h1>
+            <div>
+            <h1>YAAR</h1>
+
+            </div>
+            </section>
+            <h5>Bechdo BASS!</h5>
+            
+        </div>
+
+        
+        
+    </header>
+    <div class="mid">
+        <div class="con">
+            <h1>Platforms</h1>
+            <div>
+                <section id="amaz">
+                    
+                    <a href="/amazon"><img src="amazon.png" alt=""></a>
+                </section>
+                <section id="flip">
+                    <a href="/flipkart">
+                    <img src="flipkart.png" alt="">
+
+                    </a>
+                </section>
+                <section id="mynt">
+                    <a href="/myntra">
+                    <img src="myntra.png" alt="">
+
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="phome">
+        <div class="con">
+            <h1>Products</h1>
+            <div class="prodhold" id="display">
+                <div class="pleft">
+                    <h5>Manage and visualize your inventory here!</h5>
+                    <div>
+                        <img src="mnage.png" alt="">
+                    </div>
+                    <a href="/products">View ALL</a>
+                </div>
+                <div class="pright">
+                    <h2>Top 3 Products</h2>
+                    <div class="outv">
+                        <div>
+                            <section><img src="knife.png" alt=""></section>
+                            <p>Knife</p>
+                        </div>
+                        <div>
+                            <section><img src="bottle.png" alt=""></section>
+                            <p>Bottle</p>
+                        </div>
+                        <div>
+                            <section><img src="watch.png" alt=""></section>
+                            <p>Watch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <div class="analyze">
+        <div class="con">
+            <h1>
+                Analyze
+            </h1>
+            <div class="hanal">
+                <section>
+                    <div>
+                    <img src="bar.png" alt="">
+                    </div>
+                    <div>
+                    <img src="pie.png" alt="">
+
+                        </div>
+                </section>
+                <section class="lize">
+                    <p>Your One place to visualize and plan your growth!</p>
+                    <a href="/analyze">VIEW</a>
+                    </section>
+                
+
+            </div>
+        </div>
+    </div>
+        
+    
+</body>
+<script>
+ var amaz = document.getElementById('amaz');
+ var mynt = document.getElementById('mynt');
+ var display = document.getElementById('display');
+ var flip = document.getElementById('flip');
+ var clan = document.getElementById('clan');
+ var clpl = document.getElementById('clpl');
+ var clpr = document.getElementById('clpr');
+
+//  clan.onclick = function(){
+//     window.scrollTo(0,800);
+//  };
+ 
+//  clpl.onclick = function(){
+    
+//     window.scrollY=665;
+//  };
+//  clan.onclick = function(){
+//     window.scrollY=1395;
+//  };
+
+setInterval(pointerCheck, 1000);
+function pointerCheck() {
+    if(window.scrollY>=1395){
+        display.style.animation="dpl 0.7s  0s 1 forwards"
+    }
+    else if(window.scrollY>=600){
+        console.log("AAAA");
+        amaz.style.animation="sll 0.7s ease-in 0.5s 1 forwards"
+        flip.style.animation="zout 0.3s  0s 1 forwards"
+        mynt.style.animation="slr 0.7s ease-in 0.5s 1 forwards"
+
+    }
+	console.log(window.scrollY);
+}
+    
+</script>
+</html>

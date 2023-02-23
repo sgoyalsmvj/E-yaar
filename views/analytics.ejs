@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverView Analysis</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="/Joshi.css">
+</head>
+
+<body>
+    <div class="ov-bg">
+
+        <section id="ov-head">
+            <h1 ov-heading>Which Platform Is Most Suitable For You?</h1>
+        </section>
+        <section id="ov-charts">
+            <canvas id="ov-pie-ch"></canvas>
+        </section>
+
+    </div>
+
+
+
+</body>
+
+<script>
+    // console.log(finalfp);
+
+    var xValues = ["Amazon", "Flipkart", "Myntra"];
+    var yValues = [12, 25, 13];
+    var barColors = [
+        "rgb(255, 230, 9)",
+        "rgb(52, 52, 230)",
+        "rgb(243, 36, 70)",
+    ];
+    var myChart = new Chart("ov-pie-ch", {
+        type: "pie",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "So What are you Choosing among this!"
+            }
+        }
+    });
+</script>
+
+</html>

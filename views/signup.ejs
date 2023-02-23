@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Joshi.css">
+    <title>Signup</title>
+</head>
+<body>  
+    <div class = "signup-form">
+        <h2 id="signup-header">Sign Up</h2>
+    <form action="/signup" method = "POST" novalidate class="validated-form  addbgadmin">
+        <div class="mb-3">
+            <label class="form-label"  for="title">Name</label>
+            <input class="form-control" type="text" id="title" name="product[name]" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="image">Password</label>
+            <input class="form-control" type="text" id="image3" name="product[pass]" required>
+            
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="image">Mail</label>
+            <input class="form-control" type="email" id="image1" name="product[mail]" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="image">Number</label>
+            <input class="form-control" type="text" id="image1" name="product[number]" required>
+          
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="image">Amazon Id</label>
+            <input class="form-control" type="text" id="image2" name="product[aid]" required>
+          
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="image">Myntra ID</label>
+            <input class="form-control" type="text" id="image3" name="product[mid]" required>
+           
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="image">Flipkart Id</label>
+            <input class="form-control" type="text" id="image3" name="product[fid]" required>
+           
+        </div>
+     
+        <div class="mb-3" >
+             <button id = "signup-btn" class="btn btn-success"><a href="./homepage.html" >Add User</a></button>
+        </div>
+        
+    </form>
+     </div>
+</body>
+</html>

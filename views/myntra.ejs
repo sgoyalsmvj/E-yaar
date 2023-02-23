@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Analysis</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="/Joshi.css">
+</head>
+
+<body>
+    <div class="fullbg">
+        <section id="flipkart-head">
+            <h1 id="amz-head">Myntra Analysis</h1>
+            <h3>Analysis Of Your Products' At Myntra Store</h3>
+        </section>
+        <div class="outprod">
+            <section id="products">
+                <h3>Products</h3>
+                <%var t = [];%>
+                <%var o = [];%>
+        
+                <%for(f of finalfp ){%>
+                <div>
+                    <h5>ID : <%=f.id%></h5>
+                    <p>SOLD : <%=f.number%></p>
+                    <%t.push(f.id)%>
+                    <%o.push(f.number)%>
+                </div>
+                <%}%>
+            </section>
+        </div>
+        <section id="charts">
+            <canvas id="pie-chart" style="width:400px; height : 400px;"></canvas>
+            <canvas id="bar-chart" style="width: 400px; height : 400px;"></canvas>
+        </section>
+    </div>
+    
+
+    
+   
+    <!-- <%var z = 100;%> -->
+
+
+
+<script>
+    // console.log(finalfp);
+    var t = [];
+    var t = "<%= t %>";
+    var o = "<%= o %>"
+    var at = t.split(",");
+    var ot = o.split(",");
+    console.log(at);
+    console.log(ot);
+    var xValues = at;
+    var yValues = ot;
+    var barColors = [
+        "#b91d47",
+        "#00aba9",
+        "#2b5797",
+        "#e8c3b9",
+        "#1e7145"
+    ];
+    var myChart = new Chart("pie-chart", {
+        type: "pie",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "World Wide Wine Production 2018"
+            }
+        }
+    });
+
+
+
+    var myChart2 = new Chart("bar-chart", {
+        type: "bar",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "World Wide Wine Production 2018"
+            }
+        }
+    });
+</script>
+</body>
+
+</html>

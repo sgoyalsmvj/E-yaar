@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiver Arts</title>
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Noto+Sans&family=Smooch&family=Water+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Joshi.css">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column vh-100">
+    <header>
+        <!-- <img src="" alt=""> -->
+        <div class="con">	
+            <div class="top califont">
+                <div id="dropbar" class="dropbar">
+                        
+
+                    <div class="dropcon">
+                        <div id="bars" class="bars">
+                            <div id="bar1"	class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="dropitems">
+                    <ul id="dropul">
+                        <div class="dropcon">
+                            <li class="droplist"><a href="/">HOME</a></li>
+                            <li class="droplist"><a href="/showcase">SHOP</a></li>
+                            <!-- <li class="droplist"><a href="/about">ABOUT</a></li>   -->
+                            <li class="droplist"><a href="/blog">BLOG</a></li>
+                            <li class="droplist"><a href="/vieworder">ORDERS</a></li>
+                        </div >
+                        <h2>Links</h2>
+                        <div class="droplink">
+                            <a href="https://www.facebook.com/rupali.joshi.18041092"><i class="fab fa-facebook-f"></i></a> 
+                            <a href="https://pin.it/6TIHCp7"><i class="fab fa-pinterest"></i></a>
+                            <a href="https://youtube.com/channel/UCiVVxejO3q3_8nTphFxlVEw"><i class="fab fa-youtube"></i></a>
+
+                            <a href="https://www.instagram.com/__hiver._/?hl=en"><i class="fab fa-instagram"></i></a>
+                            
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="headlist">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/showcase">SHOP</a></li>
+                    <!-- <li><a href="/about">ABOUT</a></li> -->
+
+                    
+                    <li><a href="/blog">BLOG</a></li>
+                    <li class="droplist"><a href="/vieworder">ORDERS</a></li>
+
+                </ul>
+                <div class="cart"><a class="carticon" href="/order"><i class="fa-solid fa-cart-shopping"><p><%=num%></p></i></a></div>
+            </div>
+        </div>	
+        <!-- <div class="con">
+            <div class="bottom">
+                <h1>CATCHY LINE</h1>
+                <h3>Chotti CATHY LINE</h3>
+            </div>	
+        </div> -->
+    </header>
+    <main>
+        
+        
+        <%- body %>
+    </main>
+    <footer>
+        <div class="con">
+            <section>
+                <h1 class="califont">Hiver Arts</h1>
+
+            </section>
+            <div class="top">
+                <div class="footlink">
+                    <h3>Links</h3>
+                    <div>
+                        <a href="https://www.facebook.com/rupali.joshi.18041092"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="https://pin.it/6TIHCp7"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com/channel/UCiVVxejO3q3_8nTphFxlVEw"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/__hiver._/?hl=en"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                    
+                </div>
+                <div class="footmenu">
+                    <ul class="headlist">
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/showcase">SHOP</a></li>
+                        <!-- <li><a href="/about">ABOUT</a></li> -->
+                        <li><a href="/blog">BLOG</a></li>
+                        <li class="droplist"><a href="/vieworder">ORDERS</a></li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>All painting are created and owned by RUPALI JOSHI</p>
+                <p>For any queries contact us on this website.</p>
+            </div>
+
+        </div>
+
+    </footer>
+   
+</body>
+<script>
+
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.validated-form')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+
+
+
+
+
+    var bars = document.getElementById('bars');
+    var dropbar = document.getElementById('dropbar');
+
+var dropul = document.getElementById('dropul');
+var bar1 = document.getElementById('bar1');
+var bar2 = document.getElementById('bar2');
+
+var dropstatus = 0;
+bars.onclick = function() {myFunction8()};
+function myFunction8() {
+  if(dropstatus==0){
+      dropul.style.animation = "drop 1s forwards";
+      dropbar.style.zIndex="3";
+      bar1.style.animation = "cross 1s forwards";
+      bar2.style.animation = "cross2 1s forwards";
+
+      
+      dropstatus=1;
+      return 0;
+  }
+  if(dropstatus==1){
+      dropul.style.animation = "up 1s forwards";
+      bar1.style.animation = "decross 1s forwards";
+      bar2.style.animation = "decross2 1s forwards";
+      dropbar.style.zIndex="1";
+    
+      
+      dropstatus=0;
+      return 0;
+  }
+  
+
+}
+ 
+  var myCarousel = document.querySelector('#myCarousel')
+  var carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 2000,
+       wrap: false
+      });
+      
+     
+</script>
+
+
+
+</html>

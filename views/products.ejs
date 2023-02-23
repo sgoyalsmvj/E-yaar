@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Name</title>
+    <link rel="stylesheet" href="/Joshi.css">
+</head>
+
+<body>
+    <div class="bgpr">
+        <h1>All Your Products</h1>
+    <div id="product-details">
+        <%for(p of prod){%>
+        <section class="product-details">
+            <h2 id="pr-name">Name: <%=p.name%></h2>
+            <h4 id="price">Price:<%=p.price%></h4>
+            <h4 id="quan-sold">ID:<%=p._id%></h4>
+        </section>
+        <%}%>
+
+    </div>
+    </div>
+    
+
+</body>
+
+</html>
